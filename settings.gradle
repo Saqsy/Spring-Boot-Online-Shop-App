@@ -1,4 +1,5 @@
 rootProject.name = 'Spring-Boot-Online-Shop-App'
 include 'Product-Service'
 include 'Order-Service'
+include 'inventary-service'
 
