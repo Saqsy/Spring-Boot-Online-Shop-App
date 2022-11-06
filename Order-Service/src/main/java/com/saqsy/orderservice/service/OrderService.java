@@ -37,7 +37,7 @@ public class OrderService {
 
         List<String> skuCodes = order.getOrderLineItemsList().stream().map(OrderLineItems::getSkuCode).collect(Collectors.toList());
 
-        UriComponentsBuilder uriBuilder = UriComponentsBuilder.fromUriString("http://localhost:8083/api/inventory")
+        UriComponentsBuilder uriBuilder = UriComponentsBuilder.fromUriString("http://inventory-service/api/inventory")
                 .queryParam("skuCode",skuCodes);
 
         // Call inventory service and place order if product in stock
