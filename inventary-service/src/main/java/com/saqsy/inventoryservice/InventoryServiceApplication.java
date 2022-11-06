@@ -17,15 +17,14 @@ public class InventoryServiceApplication {
 //    @Bean
 //    public CommandLineRunner loadData(InventoryRepository inventoryRepository){
 //        return args -> {
-//            Inventory inventory = new Inventory();
-//            inventory.setSkuCode("product_1");
-//            inventory.setQuantity(100);
 //
-//            Inventory inventory2 = new Inventory();
-//            inventory.setSkuCode("product_2");
-//            inventory.setQuantity(129);
-//            inventoryRepository.save(inventory);
-//            inventoryRepository.save(inventory2);
+//            for (int i = 0 ; i < 1 ; i ++){
+//                Inventory inventory = new Inventory();
+//                inventory.setSkuCode("product_"+i);
+//                inventory.setQuantity(100+i);
+//
+//                inventoryRepository.save(inventory);
+//            }
 //        };
 //    }
 
